@@ -16,7 +16,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <article className="prose lg:prose-xl">
+          <h1>Next.js with Vercel</h1>
+          {children}
+        </article>
+      </body>
     </html>
   )
 }
